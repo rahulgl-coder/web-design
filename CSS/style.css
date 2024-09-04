@@ -64,13 +64,30 @@ body {
     align-items: center;
     gap: 100px;
 }
-.btn {
+.button{
+    display: flex;
+    gap: 10px;
+}
+.text_content p{
+    max-width: 463px;
+    color: #737373;
+}
+.pricing p{
+    color: #737373;
+}
+.profile_box p{
+    color: #737373;
+}
+.rights p{
+    color: #737373;
+}
+ .btn {
     padding: 15px 30px 15px 30px;
     gap: 15px;
     border-radius: 5px;
     border: none;
     background: transparent;
-    color: white;
+  color: white;
 }
 .btn.trans {
     color: #FF6551;
@@ -96,15 +113,16 @@ body {
     width: 165px;
     height: 52px;
     padding: 15px 18px 15px 40px;
-    gap: 10px;
-    border-radius: 5px 0px 0px 0px;
+    border-radius: 5px ;
     border: 1px solid;
+    display: flex;
 }
 .productbtn {
     border-radius: 37px;
     display: flex;
     font-size: 14px;
-    align-items: center;
+    align-items: end;
+    gap: 5px;
 }
 .sub {
     color: white;
@@ -113,6 +131,9 @@ body {
     justify-content: center;
     width: 50%;
     gap: 35px;
+}
+.sub h5{
+    color: #E74040;
 }
 
 .main {
@@ -123,11 +144,14 @@ body {
 h1 {
     font-size: 58px;
 }
+.sub h4{
+font-family: Montserrat;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+max-width: 408px;
 
-h4 {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
 }
 
 .mainimg_img {
@@ -164,6 +188,12 @@ padding-left: 20px;
     gap: 30px;
     height: 340px; 
 }
+.slash{
+    width: 50px;
+height: 2px;
+background: #E74040;
+
+}
 .card.a{
     margin-top: 60px ;
 }
@@ -187,6 +217,8 @@ p {
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+}
+.card p{
     color: #737373;
 }
 
@@ -197,12 +229,19 @@ p {
     gap: 20px;
     box-shadow: 0px 13px 19px 0px #00000012;
     height: 292px;
+    color: black;
 }
 
 .card:hover {
     background: #FF6551;
     color: #Ffff;
     padding-top: 20px;
+}
+.card:hover .slash{
+    background: white;
+}
+.card:hover p{
+    color: white;
 }
 
 #h5 {
@@ -454,10 +493,8 @@ s {
     border-radius: 3px 0px 0px 0px;
     opacity: 0px;
     position: absolute;
-    /* background: #FF6551; */
     background: #E74040;
     box-shadow: 0px 2px 4px 0px #0000001A;
-
     color: white;
 
 }
@@ -545,7 +582,6 @@ s {
 .contact {
     display: flex;
     gap: 10px;
-    /* text-align: center; */
 }
 
 .footerbox_cnt {
@@ -572,7 +608,10 @@ s {
     text-decoration: none;
     color: #737373;
 }
-
+.emailbox{
+    display: flex;
+    flex-direction: row-reverse;
+}
 .emailbox form {
     width: 688px;
     display: flex;
@@ -591,6 +630,7 @@ s {
 .emailbox .btn.red_btn.a {
     border-radius: 0%;
     position: absolute;
+    height: 45px;
 }
 
 ::placeholder {
