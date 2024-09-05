@@ -34,8 +34,7 @@ body {
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
     background: #26335D;
     padding-top: 10px;
 }
@@ -60,9 +59,11 @@ body {
 }
 
 .navbar {
+    max-width: 815px;
     display: flex;
-    align-items: center;
-    gap: 100px;
+    flex: 1;
+    justify-content: space-between;
+
 }
 .button{
     display: flex;
@@ -98,7 +99,6 @@ body {
 }
 .red_btn {
     background-color: #FF6551;
-    gap: 10px;
     align-items: center;
 }
 .red_btn2 {
@@ -134,6 +134,7 @@ body {
 }
 .sub h5{
     color: #E74040;
+    font-size: 14px;
 }
 
 .main {
@@ -169,7 +170,7 @@ padding-left: 20px;
 .layer2 {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 112px;
     padding: 112px 0px 112px;
 }
 
@@ -292,9 +293,8 @@ p {
 
 .pricing {
     width: 232px;
-    height: 302px;
     padding: 25px 25px 35px 25px;
-    gap: 10px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -374,7 +374,6 @@ s {
 
 .subscribox {
     max-width: 323px;
-    max-height: 888px;
     padding: 50px 40px;
     gap: 35px;
     display: flex;
@@ -410,10 +409,23 @@ s {
     background: #2435A1;
 
 }
+.ic{
+    color: #E74040;
+    font-size: 35px;
+    
+}
+.card_icon{
+    width: 70px;
+    height: 76px;
+    background: #F9FDFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 .icon {
     color: white;
-    font-size: 40px;
+     font-size: 40px; 
 
 }
 
@@ -501,6 +513,7 @@ s {
 
 .profile_box p {
     max-width: 320px;
+    text-align: center;
 }
 
 .profile_box h6 {
