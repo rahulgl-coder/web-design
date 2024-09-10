@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School-leader</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -17,49 +18,51 @@
 </head>
 
 <body>
-    <div class="tab">
+
+    <header class="header">
         <div class="container">
-            <div class="header">
-                <div class="brand">
-                    <h3>Brandname</h3>
-                </div>
-                <div class="navbar">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">product</a></li>
-                        <li><a href="#">pricing</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                    <div class="button">
-                        <button class="btn">Login</button>
-                        <button class="btn red_btn">Join Us <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                </div>
+            <div class="brand">
+                <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                <h3>Brandname</h3>
             </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">pricing</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="header_button">
+                    <button id="transparent" class="btn trans">Login</button>
+                    <button class="btn filled">Join Us <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </nav>
         </div>
-    </div>
-    <div class="main">
-        <div class="layer">
+    </header>
+
+    <section class="banner">
+
+        <div class="container home-page">
             <div class="sub">
                 <h5>For better Future</h5>
                 <h1>HIGH QUALITY COURSES</h1>
                 <h4>Find the right instructor for you from over 10,000 teachers </h4>
-                <div class="button">
-                    <button class="btn red_btn 2">Get Quote Now</button>
-                    <button class="btn_trans ">Learn More </button>
+                <div class="main page_button">
+                    <button class="btn filled">Get Quote Now</button>
+                    <button class="btn border">Learn More </button>
                 </div>
             </div>
-            <div class="mainimg">
+            <div class="hero_cover">
                 <img src="Images/hero-cover-1.png" alt="">
             </div>
-        </div>
-    </div>
 
+
+        </div>
     </section>
-    <!-- <section2> -->
-    <div class="container">
-        <div class="layer2">
-            <div class="text_content">
+    <section class="plain_banner">
+        <div class="container">
+
+            <div class="heading_content">
                 <h6>Practise Advise</h6>
                 <h2>Most Popular Courses</h2>
                 <p>Problems trying to resolve the conflict between
@@ -77,10 +80,10 @@
                         information about </p>
                 </div>
 
-                <div class="card a">
+                <div class="card ">
                     <div class="card_icon">
                         <i class=" ic fa-solid fa-binoculars"></i>
-                        </div>
+                    </div>
                     <h5>Training Courses</h5>
                     <div class="slash"></div>
                     <p>The gradual
@@ -91,7 +94,7 @@
                 <div class="card ">
                     <div class="card_icon">
                         <i class=" ic fa-solid fa-graduation-cap"></i>
-                        </div>
+                    </div>
                     <h5>Training Courses</h5>
                     <div class="slash"></div>
                     <p>The gradual
@@ -99,10 +102,10 @@
                         information about </p>
                 </div>
 
-                <div class="card a">
+                <div class="card ">
                     <div class="card_icon">
                         <i class=" ic fa-solid fa-suitcase-rolling"></i>
-                        </div>
+                    </div>
                     <h5>Life time acces</h5>
                     <div class="slash"></div>
                     <p>The gradual
@@ -111,13 +114,12 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- </section> -->
-    <!-- <section3> -->
+    </section>
 
-    <div class="container">
-        <div class="layer2">
-            <div class="text_content">
+    <!-- <section3> -->
+    <section class="plain_banner">
+        <div class="container">
+            <div class="heading_content">
                 <h6>Practise Advice</h6>
                 <h2>Our Expert Teachers</h2>
                 <p>Problems trying to resolve the conflict between
@@ -126,14 +128,15 @@
             </div>
             <div class="productcard">
                 <div class="product">
-
-                    <img class="saleimg" src="Images/product 1.png" alt="">
-                    <div class="button_icon">
-                        <i class=" ig fa-regular fa-heart"></i>
-                        <i class="ig fa-solid fa-cart-shopping"></i>
-                        <i class=" ig fa-regular fa-eye"></i>
+                    <div class="saleimg">
+                        <img src="Images/product 1.png" alt="">
+                        <div class="button_icon">
+                            <button class=" btnicon"><i class=" ig fa-regular fa-heart"></i></button>
+                            <button class="btnicon"><i class="ig fa-solid fa-cart-shopping"></i></button>
+                            <button class="btnicon"><i class=" ig fa-regular fa-eye"></i></button>
+                        </div>
+                        <label for="sale">sale</label>
                     </div>
-                    <div class="sale_label">sale</div>
                     <div class="pricing">
                         <div class="ratting">
                             <h6>Expert Instructions</h6>
@@ -162,19 +165,21 @@
                                 <h5>$6.48</h5>
                             </div>
                         </div>
-                        <button class="btn_trans productbtn">Learn more<i class="fa-solid fa-angle-right"></i></button>
+                        <button class="btn border">Learn more<i class="fa-solid fa-angle-right"></i></button>
                     </div>
                 </div>
 
 
                 <div class="product ">
-                    <img src="Images/product 2.png" alt="">
-                    <div class="button_icon">
-                        <i class=" ig fa-regular fa-heart"></i>
-                        <i class="ig fa-solid fa-cart-shopping"></i>
-                        <i class=" ig fa-regular fa-eye"></i>
+                    <div class="saleimg">
+                        <img src="Images/product 2.png" alt="">
+                        <div class="button_icon">
+                            <button class=" btnicon"><i class=" ig fa-regular fa-heart"></i></button>
+                            <button class="btnicon"><i class="ig fa-solid fa-cart-shopping"></i></button>
+                            <button class="btnicon"><i class=" ig fa-regular fa-eye"></i></button>
+                        </div>
+                        <label for="sale">Sale</label>
                     </div>
-                    <div class="sale_label">sale</div>
                     <div class="pricing">
                         <div class="ratting">
                             <h6>2,769 online courses</h6>
@@ -202,17 +207,19 @@
                                 <h5>$6.48</h5>
                             </div>
                         </div>
-                        <button class="btn_trans productbtn">Learn more<i class="fa-solid fa-angle-right"></i></button>
+                        <button class="btn border">Learn more<i class="fa-solid fa-angle-right"></i></button>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="Images/product 3.png" alt="">
-                    <div class="button_icon">
-                        <i class=" ig fa-regular fa-heart"></i>
-                        <i class="ig fa-solid fa-cart-shopping"></i>
-                        <i class=" ig fa-regular fa-eye"></i>
+                    <div class="saleimg">
+                        <img src="Images/product 3.png" alt="">
+                        <div class="button_icon">
+                            <button class=" btnicon"><i class=" ig fa-regular fa-heart"></i></button>
+                            <button class="btnicon"><i class="ig fa-solid fa-cart-shopping"></i></button>
+                            <button class="btnicon"><i class=" ig fa-regular fa-eye"></i></button>
+                        </div>
+                        <label for="sale">Sale</label>
                     </div>
-                    <div class="sale_label">sale</div>
                     <div class="pricing">
                         <div class="ratting">
                             <h6>Training courses</h6>
@@ -240,17 +247,19 @@
                                 <h5>$6.48</h5>
                             </div>
                         </div>
-                        <button class="btn_trans productbtn">Learn more<i class="fa-solid fa-angle-right"></i></button>
+                        <button class="btn border">Learn more<i class="fa-solid fa-angle-right"></i></button>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="Images/product 4.png" alt="">
-                    <div class="button_icon">
-                        <i class=" ig fa-regular fa-heart"></i>
-                        <i class="ig fa-solid fa-cart-shopping"></i>
-                        <i class=" ig fa-regular fa-eye"></i>
+                    <div class="saleimg">
+                        <img src="Images/product 4.png" alt="">
+                        <div class="button_icon">
+                            <button class=" btnicon"><i class=" ig fa-regular fa-heart"></i></button>
+                            <button class="btnicon"><i class="ig fa-solid fa-cart-shopping"></i></button>
+                            <button class="btnicon"><i class=" ig fa-regular fa-eye"></i></button>
+                        </div>
+                        <label for="sale">Sale</label>
                     </div>
-                    <div class="sale_label">sale</div>
                     <div class="pricing">
                         <div class="ratting">
                             <h6>Certified Teachers</h6>
@@ -278,40 +287,39 @@
                                 <h5>$6.48</h5>
                             </div>
                         </div>
-                        <button class="btn_trans productbtn">Learn more<i class="fa-solid fa-angle-right"></i></button>
+                        <button class="btn border">Learn more<i class="fa-solid fa-angle-right"></i></button>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
+    </section>
 
     <!-- </section3> -->
     <!-- <section4> -->
-    <div class="main">
-        <div class="container">
-            <div class="layer bt">
-                <div class="main_img">
-                    <img src="Images/hero2.png" alt="">
-                </div>
-                <div class="sub at">
-                    <div class="bar"></div>
-                    <h2>Most Popular <br> Courses</h2>
-                    <p>Problems trying to resolve the conflict between <br>
-                        the two major realms of Classical physics: <br>
-                        Newtonian mechanics </p>
-                    <button class="btn trans">Learn more<i class="fa-solid fa-chevron-right"></i>
-
-                </div>
+    <section class="banner_second">
+        <div class="container part">
+            <div class="main_img">
+                <img src="Images/hero2.png" alt="">
             </div>
+            <div class="sub at">
+                <div class="bar"></div>
+                <h2>Most Popular <br> Courses</h2>
+                <p>Problems trying to resolve the conflict between <br>
+                    the two major realms of Classical physics: <br>
+                    Newtonian mechanics </p>
+                <a href="#">Learn More <i class="fa-solid fa-angle-right"></i></a>
 
+            </div>
         </div>
-    </div>
+
+    </section>
     <!-- </secion4> -->
     <!-- <section5> -->
-    <div class="container">
-        <div class="layer2 pad">
-            <div class="text_content">
+    <div class="plain_banner">
+        <div class="container">
+
+            <div class="heading_content">
                 <h6>Practice Advice</h6>
                 <h2>Our Expert Teachers</h2>
                 <p>Problems trying to resolve the conflict between <br>
@@ -329,7 +337,7 @@
                     <h6>Per month</h6>
                     <p>Slate helps you see how
                         many more days you need...</p>
-                    <button class="btn red_btn 2">Try for free</button>
+                    <button class="btn filled">Try for free</button>
                     <div class="updates">
                         <div class="block">
                             <div class="subblock">
@@ -380,7 +388,7 @@
 
                     <p>Slate helps you see how
                         many more days you need...</p>
-                    <button class="btn red_btn ">Try for free</button>
+                    <button class="btn filled ">Try for free</button>
                     <div class="updates">
                         <div class="block">
                             <div class="subblock">
@@ -428,7 +436,7 @@
 
                     <p>Slate helps you see how
                         many more days you need...</p>
-                    <button class="btn red_btn 2">Try for free</button>
+                    <button class="btn filled">Try for free</button>
                     <div class="updates">
                         <div class="block">
                             <div class="subblock">
@@ -470,9 +478,10 @@
     </div>
     <!-- </section5> -->
     <!-- <section6> -->
-    <div class="container">
-        <div class="layer2 pad">
-            <div class="text_content">
+    <div class="plain_banner">
+        <div class="container">
+
+            <div class="heading_content">
                 <h6>Testimonials</h6>
                 <h2>Approdable packages</h2>
                 <p>Problems trying to resolve the conflict between
@@ -485,11 +494,11 @@
                         you need to work to reach your financial
                         goal for the month and year.</p>
                     <div class="star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <h5>Regina miles</h5>
                     <h6>Designer</h6>
@@ -500,11 +509,11 @@
                         you need to work to reach your financial
                         goal for the month and year.</p>
                     <div class="star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <h5>Regina miles</h5>
                     <h6>Designer</h6>
@@ -514,36 +523,35 @@
     </div>
     <!-- </section6> -->
     <!-- <section7> -->
-    <div class="main">
-        <div class="container">
-            <div class="layer_coloum">
-                <div class="text_content2">
-                    <h6>News letter</h6>
-                    <h2>Every Client Matters</h2>
-                    <p>Problems trying to resolve the conflict between <br>
-                        the two major realms of Classical physics: Newtonian mechanics </p>
-                </div>
-                <div class="emailbox">
+    <section class="banner_second">
+        <div class="container email">
+            <div class="heading_content center">
+                <h6>News letter</h6>
+                <h2>Every Client Matters</h2>
+                <p>Problems trying to resolve the conflict between
+                    the two major realms of Classical physics: Newtonian mechanics </p>
+            </div>
+            <div class="emailbox">
 
-                    <input class="txt" type="email" placeholder="Your Email">
-                    <button class="btn red_btn a">subscribe</button>
-                </div>
+                <input class="txt" type="email" placeholder="Your Email">
+                <button class="btn filled ">subscribe</button>
             </div>
         </div>
-    </div>
+    </section>
+
     <!-- </section7> -->
-    <!-- <sectionfooter> -->
-    <div class="container">
-        <div class="footer">
+    <footer>
+        <div class="container_footer">
+
             <div class="footerbox">
-                <h5>Company info</h5>
+                <h5>Company Info</h5>
                 <a href="#">About us</a>
                 <a href="#">carrier</a>
                 <a href="#">we are hiring</a>
                 <a href="#">blog</a>
             </div>
             <div class="footerbox">
-                <h5>legal</h5>
+                <h5>Legal</h5>
                 <a href="#">About us</a>
                 <a href="#">carrier</a>
                 <a href="#">we are hiring</a>
@@ -566,35 +574,35 @@
             <div class="footerbox_cnt">
                 <h5>Get in Touch</h5>
                 <div class="contact">
-                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-phone call"></i>
                     <a href="#">(480) 555-0103</a>
                 </div>
                 <div class="contact">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-location-dot location"></i>
                     <a href="#">4517 Washington Ave. Manchester,
                         Kentucky 39495</a>
                 </div>
                 <div class="contact">
-                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-regular fa-envelope gmail"></i>
                     <a href="#">debra.holt@example.com</a>
                 </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="rights">
+        <div class="container">
+            <p>Made With Love By Figmaland All Rights Reserved</p>
+            <div class="social_media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
 
         </div>
     </div>
-
-    <!-- </sectionfooter> -->
-    <div class="rights">
-        <p>Made With Love By Figmaland All Rights Reserved</p>
-        <div class="social_media">
-            <a href="#"><i class="fa-brands fa-facebook" style="color: #FF6551 ;"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram" style="color: #FF6551 ;"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter" style="color: #FF6551;"></i></a>
-        </div>
-
-    </div>
-    </div>
-
 
 </body>
 
