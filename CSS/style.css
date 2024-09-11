@@ -120,11 +120,16 @@ text-align: center;
 .main_img img{
     width: 100%;
 }
+.container_header{
+    display: flex;
+}
+.btn{
+    white-space: nowrap;
+}
 
 .navbar {
     display: flex;
-    justify-content: space-around;
-    flex: 1;
+    gap: 16vw;
     align-items: center;
     color: var(--main-heading-text-color);
 
@@ -754,7 +759,7 @@ text-align: left;
 }
 
 .txt {
-    width: 571px;
+    width: 50vw;
     height: 47px;
     outline: none;
     padding-left: 25px;

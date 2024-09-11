@@ -37,9 +37,15 @@
 }
 
 @media screen and (max-width:840px) {
+    .container_header{
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
     .sub {
         gap: 10px;
     }
+
 
     .sub h1 {
         font-size: 37px;
@@ -71,10 +77,18 @@
     .footerbox_cnt{
         gap: 26px;
     }
+    .navbar{
+        gap: 8vw;
+    }
+
+
 }
 
 @media screen and (max-width:710px) {
 
+    .span{
+        gap: 40vw;
+    }
     #ham-icon{
         display: block;
         color: white;
@@ -91,7 +105,9 @@
     .header .container{
         gap: 10px;
     }
-
+     .brand{
+        flex: 1;
+     }
     .sub {
         width: 100%;
         gap: 20px;
@@ -168,8 +184,8 @@
       gap: 40px;
       left:-300px;
       top: 0;
-      width: 175px;
-      padding: 25px 10px;
+      width: 150px;
+      padding: 40px 10px;
       background-color:var(--banner-color);
       height: 70%;
       z-index: 10;
@@ -207,8 +223,8 @@
     }
 
     .txt {
-        width: 300px;
-    }
+        /* width: 300px; */
+    /* } */
     .profile {
         flex-direction: column;
         gap: 30px;
@@ -220,7 +236,8 @@
     }
 }
 
-@media screen and (max-width:530px) {
+ @media screen and (max-width:530px) {
+
     .productcard {
         grid-template-columns: 1fr;
     }
@@ -230,11 +247,12 @@
     }
 
     .heading_content h2 {
-        font-size: 25px;
+        /* font-size: 25px; */
     }
+    
 
     .heading_content p {
-        text-align: center;
+        /* text-align: center; */
     }
 
     .footerbox h5 {
@@ -276,7 +294,7 @@
 
     .heading_content {
         gap: 5px;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .footerbox {
@@ -288,7 +306,7 @@
     }
 
     .sub {
-        gap: 12px;
+        /* gap: 12px; */
     }
 
     .plain_banner .container {
@@ -301,9 +319,7 @@
         gap: 10px;
     }
 
-    .btn {
-        font-size: 8px;
-    }
+    
 
     .pricing .btn {
         width: 140px;
@@ -317,9 +333,11 @@
     .card {
         width: 70%;
     }
-}
+} 
 
 @media screen and (max-width:404px) {
+   
+   
     .txt {
         width: 200px;
     }
@@ -340,9 +358,6 @@
         padding: 7px 9px;
     }
 
-    .navbar ul {
-        display: none;
-    }
 
     .heading_content p {
         font-size: 11px;
@@ -379,4 +394,5 @@
     .container_footer{
         padding: 0px 10px 0px 10px;
     }
+    
 }
