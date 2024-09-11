@@ -75,8 +75,21 @@
 
 @media screen and (max-width:710px) {
 
+    #ham-icon{
+        display: block;
+        color: white;
+    }
+    #close{
+        color: white;
+    }
+    .banner .container{
+        padding-top: 22px;
+    }
     .text {
         width: 300px;
+    }
+    .header .container{
+        gap: 10px;
     }
 
     .sub {
@@ -149,9 +162,35 @@
         display: none;
     }
 
-    .navbar ul li a {
-        display: none;
+    .navbar ul{
+      position: fixed;
+      flex-direction: column;
+      gap: 40px;
+      left:-300px;
+      top: 0;
+      width: 175px;
+      padding: 25px 10px;
+      background-color:var(--banner-color);
+      height: 70%;
+      z-index: 10;
+      margin-top:70px ;
+      text-align: center;
+      transition: ease-in-out 0.4s;
+      border: 1px solid white;
+      
     }
+    #check:checked ~ .navbar ul{
+       left: 0;
+    }
+    #check:checked ~ label #close{
+          display: block;
+     }
+     #check:checked ~ label #ham-icon{
+        display: none;
+     }
+
+
+
 
     .subscribtion {
         grid-template-columns: 1fr;
@@ -174,6 +213,10 @@
         flex-direction: column;
         gap: 30px;
         align-items: center;
+    }
+    .header{
+        position: fixed;
+        z-index: 10;
     }
 }
 
@@ -332,5 +375,8 @@
     }
     .at{
         gap: 3px;
+    }
+    .container_footer{
+        padding: 0px 10px 0px 10px;
     }
 }
