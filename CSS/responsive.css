@@ -181,7 +181,12 @@
     #transparent {
         display: none;
     }
+.navbar .dropdown{
+    background-color:#FF6551;
+    height: 70%;
+    
 
+}
     .navbar ul{
       position: fixed;
       flex-direction: column;
@@ -237,6 +242,7 @@
         width: 100%;
         padding-bottom: 10px;
     }
+    
 }
 
  @media screen and (max-width:530px) {
