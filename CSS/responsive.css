@@ -50,9 +50,10 @@
     margin: 0;
     
 }
-   
-    
- } 
+.dropdown_parent:hover i{
+    visibility: hidden;
+}
+   } 
     
 
 
@@ -257,7 +258,6 @@
     #click:checked~.dropdown{
        visibility: visible;
        opacity: 1;
-       background:#FF6551;
        display:block;
        margin-top: 0;
        position: relative;
@@ -265,8 +265,7 @@
        margin-top: 0;
        margin-left: 0;
        display: flex;
-    }
-    
+       }
 }
 
  @media screen and (max-width:530px) {
@@ -322,7 +321,7 @@
 
     .heading_content {
         gap: 5px;
-        /* align-items: center; */
+        
     }
 
     .footerbox {
@@ -342,12 +341,6 @@
 
     .profile_box {
         gap: 10px;
-    }
-
-    
-
-    .pricing .btn {
-        width: 140px;
     }
 
     .gridcard {
